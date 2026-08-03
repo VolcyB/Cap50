@@ -207,6 +207,87 @@ p { margin: 0 0 1em; }
 
 .scroll-cue svg { width: 18px; height: 18px; }
 
+.hero-page {
+  min-height: calc(100vh - 64px);
+}
+
+/* Stronger, more even overlay than the homepage hero: these pages carry
+   a full paragraph of text, not just a logo, so contrast matters more. */
+.hero-page::before {
+  background: linear-gradient(180deg, rgba(20, 14, 10, 0.6) 0%, rgba(20, 14, 10, 0.48) 50%, rgba(20, 14, 10, 0.62) 100%);
+}
+
+.hero-content h1 {
+  color: var(--cream);
+  font-size: clamp(2.1rem, 5vw, 3rem);
+  margin: 8px 0 20px;
+}
+
+.hero-content p {
+  color: rgba(251, 246, 238, 0.92);
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.hero-cta {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.badge-cta {
+  width: 168px;
+  height: 168px;
+  border-radius: 50%;
+  border: 1px solid rgba(251, 246, 238, 0.9);
+  background: rgba(20, 14, 10, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--cream);
+  transition: transform 0.2s, background 0.2s;
+}
+
+.badge-cta::before {
+  content: '';
+  position: absolute;
+  inset: 9px;
+  border: 1px solid rgba(251, 246, 238, 0.45);
+  border-radius: 50%;
+}
+
+.badge-cta:hover {
+  transform: translateX(-50%) scale(1.06);
+  background: rgba(20, 14, 10, 0.35);
+}
+
+.badge-cta .cta-kicker {
+  font-size: 0.62rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--ochre);
+  margin-bottom: 8px;
+}
+
+.badge-cta .cta-icon {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 8px;
+}
+
+.badge-cta .cta-main {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
 @keyframes bob {
   0%, 100% { transform: translate(-50%, 0); }
   50% { transform: translate(-50%, 8px); }
@@ -340,6 +421,7 @@ p { margin: 0 0 1em; }
 section.page-body {
   padding: 70px 24px 100px;
 }
+
 
 /* ---------- Programme (itinerary) ---------- */
 
