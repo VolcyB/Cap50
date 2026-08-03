@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Playlist Maroc — Cap 50</title>
+<link rel="icon" type="image/svg+xml" href="assets/img/logo/favicon.svg">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand"><img src="assets/img/logo/logo-white.svg" alt=""> Cap 50</a>
+    <button class="nav-toggle" aria-label="Menu">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="programme.html">Le programme</a></li>
+      <li><a href="galerie.html">Galerie photos</a></li>
+      <li><a href="a-emporter.html">Que prendre</a></li>
+      <li><a href="meteo.html">Météo</a></li>
+      <li><a href="playlist.html" class="active">Playlist</a></li>
+      <li><a href="photos.html">Vos photos</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="eyebrow">À vos titres</div>
+  <h1>Playlist Maroc</h1>
+  <p class="lede">Pour danser au sommet des dunes &mdash; chacune ajoute ses titres préférés.</p>
+</header>
+
+<section class="page-body">
+
+  <div class="callout">
+    <h3>Comment ajouter un titre&nbsp;?</h3>
+    <p style="margin-bottom:0;">
+      La playlist se construit sur une <strong>playlist collaborative Spotify</strong> : tout le monde peut y ajouter des titres directement depuis l'app. Pas de Spotify&nbsp;? Le formulaire ci-dessous fonctionne aussi.
+    </p>
+  </div>
+
+  <div style="text-align:center; display:flex; gap:16px; justify-content:center; flex-wrap:wrap; margin-bottom:60px;">
+    <a class="btn" href="#" id="spotify-link">Ouvrir la playlist Spotify</a>
+    <a class="btn btn-secondary" href="#" id="form-link">Proposer un titre via formulaire</a>
+  </div>
+
+  <!--
+    Pour activer les liens ci-dessus :
+    1) Playlist Spotify collaborative : créez une playlist, activez "Collaborative" dans les options,
+       copiez son lien, et collez-le dans href="..." de #spotify-link ci-dessus.
+    2) Formulaire (alternative sans Spotify) : créez un Google Form avec une question "Titre + lien",
+       copiez son lien de partage dans href="..." de #form-link.
+       Pour l'afficher directement dans la page plutôt qu'en onglet séparé, remplacez le bloc des
+       deux liens par un <iframe> pointant vers l'URL d'intégration du formulaire (bouton "Envoyer"
+       puis onglet "<>" dans Google Forms), à l'intérieur d'un <div class="embed-frame">.
+  -->
+
+</section>
+
+<footer class="site-footer">
+  Cap 50 &mdash; Maroc, novembre 2026
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
